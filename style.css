@@ -1,0 +1,473 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    border-bottom: solid 2px #ffffff;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+main{
+    margin-top: 75px;
+}
+
+
+.logo-restaurante {
+    width: 85px;
+    height: 55px;
+}
+
+.espaco {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.link-menu {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.link-menu:hover {
+    color: #F5820E;
+}
+
+.botao-menu {
+    cursor: pointer;
+    height: 39px;
+    width: 130px;
+    color: white;
+    border-radius: 7px;
+    background: #F5820E;
+    border: solid 1px black;
+    transition: 0.5s;
+}
+
+.botao-menu:hover {
+    color: #F5820E;
+    background: white;
+    translate: 0px -2px;
+}
+
+/*Acima header*/
+
+.banner {
+    position: relative;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+
+.banner img {
+    width: 100%;
+    height: 660px;
+    display: block;
+}
+
+.texto {
+    color: white;
+    font-size: 64px;
+}
+
+.texto span {
+    color: #F5820E;
+}
+
+.excepcional {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.botao-reserva {
+    cursor: pointer;
+    height: 46px;
+    width: 139px;
+    color: white;
+    border-radius: 7px;
+    background: #F5820E;
+    transition: 0.5s;
+    border: none;
+}
+
+.botao-reserva:hover {
+    color: #F5820E;
+    background: white;
+    translate: 0px -2px;
+}
+
+.ver-cardapio {
+    width: 139px;
+    border: 2px solid #F5820E;
+    border-radius: 5px;
+    height: 46px;
+    color: white;
+    background-color: #3A2A27;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ver-cardapio:hover {
+    color: #F5820E;
+    background: white;
+    translate: 0px -2px;
+}
+
+/*acima banner*/
+
+.descubra {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 55px;
+}
+
+.destaques {
+    font-size: 43px;
+}
+
+.destaques-p {
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+}
+
+.prato {
+    background-color: white;
+    border-radius: 5px;
+    height: 300px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+
+}
+
+.tres-pratos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 160px;
+}
+
+.img-prato {
+    border-radius: 5px;
+}
+
+.nome-prato {
+    font-size: 19px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.propaganda {
+    font-size: 13px;
+    color: rgb(58, 58, 58);
+}
+
+/*acima exibição de cardapio*/
+
+.sobre-container {
+    position: relative;
+    width: 100%;
+}
+
+.fundo {
+    width: 100%;
+    height: 635px;
+    object-fit: cover;
+    display: block;
+}
+
+.sobre-nos-hdois {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    color: white;
+    font-size: 40px;
+}
+
+.sobre-nos-flex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    color: white;
+    display: flex;
+    padding-right: 90px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 110px;
+}
+
+.cozinha {
+    width: 730px;
+    height: 525px;
+}
+
+.conteudo-textos-fundo {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-fundo {
+    width: 45px;
+    height: 30px;
+}
+
+.local-contato {
+    display: flex;
+    margin-top: 8px;
+
+}
+
+.paragrafos {
+    padding-top: 6px;
+}
+
+.paixao {
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.breve-historia {
+    width: 450px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.saiba-mais {
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    color: white;
+    border-radius: 7px;
+    background: #F5820E;
+    border: solid 1px black;
+    transition: 0.5s;
+    margin-top: 55px;
+    margin-bottom: 65px;
+}
+
+.saiba-mais:hover {
+    color: #F5820E;
+    background: white;
+    translate: 0px -2px;
+}
+
+/*pra cima sobre nós*/
+
+#lista-depoimentos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.informacoes {
+    width: 227px;
+    padding: 2px;
+    background-color: rgb(255 195 247);
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.frase {
+    margin-top: 70px;
+    padding: 5px;
+    font-weight: bold;
+    color: #363636;
+}
+
+/*pra cima depoimentos*/
+
+
+
+
+
+/*pra cima qualidades*/
+
+.descubra-2 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+
+}
+
+.botao-reserva-2 {
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    color: white;
+    border-radius: 7px;
+    background: #F5820E;
+    transition: 0.5s;
+    border: none;
+    margin-bottom: 100px;
+    font-size: 23px;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao-reserva-2:hover {
+    color: #F5820E;
+    background: white;
+    translate: 0px -2px;
+}
+
+/*pra cima chamando clientes*/
+
+.fundo-footer {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+footer {
+    background-image: url(assets/fundo-home.webp);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer {
+    font-size: 26px;
+    color: #F5820E;
+    margin-bottom: 5px;
+}
+
+.contato-footer {
+    font-size: 27px;
+    color: #F5820E;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.footer-links:hover {
+    color: #F5820E;
+}
+
+.quatro-logos {
+    width: 100%;
+    display: flex;
+    gap: 125px;
+    justify-content: center;
+}
+
+.caixa {
+    width: 140px;
+    color: rgb(202, 202, 202);
+    text-align: center;
+}
+
+.porque-esse-restaurante {
+    background-image: url(assets/fundo-home.webp);
+    height: 500px;
+    width: 100%;
+    padding: 1px;
+}
+
+.h1-porque-escolher {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+}
+
+.logos-fundo-2{
+    width: 30px;
+    margin-left: 8px;
+    margin-right: 7px;
+}
+
+.p-porque-escolher {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.faca-sua-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.menus-footer {
+    color: white;
+    border-right: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 45px;
+    gap: 8px;
+}
+
+.footer-direita {
+    color: white;
+    border-left: 2px solid white;
+    border-radius: 25px;
+}
+
+.h2-titulo{
+    font-weight: 300;
+}
+
+.explicacao{
+    font-weight: 300;
+    margin-top: 10px;
+}

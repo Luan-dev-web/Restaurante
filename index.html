@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante</title>
+</head>
+
+<body>
+
+    <header>
+        <img alt="logo-restaurante" class="logo-restaurante" src="assets/logo-restaurante.png">
+        <article class="espaco">
+            <a class="link-menu">Home</a>
+            <a class="link-menu" href="cardapio.html">Menu</a>
+            <a class="link-menu">Sobre nós</a>
+            <a class="link-menu">Galeria</a>
+            <a class="link-menu">Contato</a>
+            <button class="botao-menu" onclick="window.location.href='reserva.html'">Faça sua reserva</button>
+        </article>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="assets/banner.webp" alt="banner-do-restaurante">
+            <article class="texto-banner">
+                <h1 class="texto">Desfrute <br><span>qualidade &</span> <br>sabor!</h1>
+                <p class="excepcional">Experiencie uma culinária excepcional com igredientes <br>frescos e pratos
+                    preparados com paixão</p>
+                <button class="ver-cardapio" onclick="window.location.href='cardapio.html'">Ver cardápio</button>
+                <button class="botao-reserva" onclick="window.location.href='reserva.html'">Faça sua reserva</button>
+            </article>
+        </section>
+
+        <section>
+            <article class="descubra">
+                <h2 class="destaques">Pratos em destaque</h2>
+                <p class="destaques-p">Descubra nossos pratos e sabores exclusivos</p>
+            </article>
+
+            <article class="tres-pratos">
+                <a href="cardapio.html">
+                    <div class="prato">
+                        <img class="img-prato" src="assets/prato-1.png" alt="prato1">
+                        <p class="nome-prato">Big-Hamburger</p>
+                        <p class="propaganda">Descubra nosso delicioso Menu</p>
+                    </div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="prato">
+                        <img class="img-prato" src="assets/prato-2.png" alt="prato1">
+                        <p class="nome-prato">Salmão gourmet</p>
+                        <p class="propaganda">Descubra nosso delicioso Menu</p>
+                    </div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="prato">
+                        <img class="img-prato" src="assets/prato-3.png" alt="prato1">
+                        <p class="nome-prato">Salada diversa</p>
+                        <p class="propaganda">Descubra nosso delicioso Menu</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <section class="sobre-container">
+            <img class="fundo" alt="fundo" src="assets/fundo-home.webp">
+
+            <h2 class="sobre-nos-hdois">Sobre nós</h2>
+
+            <section class="sobre-nos-flex">
+                <img class="cozinha" alt="imagem-de-cozinha-com-pessoas" src="assets/cozinha-fundo-home.webp">
+
+                <article class="conteudo-textos-fundo">
+
+                    <h2 class="paixao">Paixão pela <br>gastronômia</h2>
+
+                    <p class="breve-historia">Há mais de 10 anos criamos uma gastronomia exclusiva, com os melhores
+                        pratos e com os melhores ingredientes para voce se sentir mais que satisfeito.</p>
+
+                    <button class="saiba-mais" onclick="window.location.href='sobre-nos.html'">Saiba mais</button>
+
+                    <article class="local-contato">
+
+                        <img alt="telefone-simbolo" src="assets/telefone-logo.webp" class="logos-fundo">
+
+                        <p class="paragrafos">Entre contato pelo número <span style="font-weight: 900;">(11)
+                                99999-9999</span></p>
+
+                    </article>
+                    <article class="local-contato">
+                        <img alt="local-simbolo" src="assets/local-logo.png" class="logos-fundo">
+
+                        <p class="paragrafos">Venha nos visitar na rua <span style="font-weight: 900;">Av. Paulista,
+                                999</span></p>
+                    </article>
+                </article>
+            </section>
+        </section>
+
+        <section>
+            <article class="descubra">
+                <h2 class="destaques">Avaliações de clientes</h2>
+                <p class="destaques-p">Avaliações feitas por clientes que vieram até nosso restaurante</p>
+            </article>
+            <article>
+                <ul id="lista-depoimentos"></ul>
+
+                <script>
+                    const lista = [
+                        {
+                            nome: "Ana",
+                            frase: "A melhor experiência gastronômica da minha vida!"
+                        },
+                        {
+                            nome: "Carlos",
+                            frase: "Atendimento excelente e comida impecável."
+                        },
+                        {
+                            nome: "Juliana",
+                            frase: "Ambiente aconchegante e pratos deliciosos."
+                        }
+                    ];
+
+                    function adicionarTudo() {
+                        const ul = document.getElementById("lista-depoimentos");
+
+                        lista.forEach(item => {
+                            const li = document.createElement("div");
+
+                            li.innerHTML = `
+          <div class="informacoes">
+            <p class="frase">"${item.frase}"</p>
+          </div>
+        `;
+
+                            ul.appendChild(li);
+                        });
+                    }
+
+                    // Executa automaticamente quando a página carregar
+                    document.addEventListener("DOMContentLoaded", function () {
+                        adicionarTudo();
+                    });
+                </script>
+            </article>
+        </section>
+
+        <section class="porque-esse-restaurante">
+            <article class="descubra">
+                <h1 class="h1-porque-escolher">Porquê escolher nosso restaurante?</h1>
+                <p class="p-porque-escolher">Descubra o que nos torna especiais</p>
+            </article>
+            <article class="quatro-logos">
+                <div class="caixa">
+                    <img alt="logo-igredientes-frescos" src="assets/logo-igredientes.png" class="logos-motivos-de-escolher">
+                    <h2 class="h2-titulo">Igredientes frescos</h2>
+                    <p class="explicacao">Utilizamos apenas igredientes de alta qualidade, sempre frescos e selecionados.</p>
+                </div>
+                <div class="caixa">
+                    <img alt="logo-igredientes-frescos" src="assets/logo-chef.png" class="logos-motivos-de-escolher">
+                    <h2 class="h2-titulo">Chef experiente</h2>
+                    <p class="explicacao">Nosso chef traz anos de experiência na culinaria para criar pratos memoraveis.</p>
+                </div>
+                <div class="caixa">
+                    <img alt="logo-igredientes-frescos" src="assets/logo-atendimento.png" class="logos-motivos-de-escolher">
+                    <h2 class="h2-titulo">Atendimento rápido</h2>
+                    <p class="explicacao">Serviço eficiente para que sua experiência seja sempre inesquecivel.</p>
+                </div>
+                <div class="caixa">
+                    <img alt="logo-igredientes-frescos" src="assets/logo-ambiente.png" class="logos-motivos-de-escolher">
+                    <h2 class="h2-titulo">Ambiente aconchegante</h2>
+                    <p class="explicacao">Um ambiente satisfatório, para que voce se sinta em casa.</p>
+                </div>
+            </article>
+        </section>
+
+        <article class="descubra-2">
+            <h1 class="destaques-2">Pronto para viver essa experiência?</h1>
+            <a class="botao-reserva-2" href="reserva.html">Reserve sua mesa agora</a>
+        </article>
+    </main>
+
+    <footer>
+        <div class="faca-sua-reserva">
+            <img alt="logo-restaurante" src="assets/logo-restaurante.png" style="width: 200px">
+            <button class="botao-menu" onclick="window.location.href='reserva.html'">Faça sua reserva</button>
+        </div>
+        <section style="display: flex;">
+            <article class="menus-footer">
+                <p class="menu-footer">Menu</p>
+                <a href="index.html" class="footer-links">Home</a>
+                <a href="cardapio.html" class="footer-links">Menu</a>
+                <a href="sobre-nos.html" class="footer-links">Sobre nós</a>
+                <a href="galeria.html" class="footer-links">Galeria</a>
+                <a href="contato.html" class="footer-links">Contato</a>
+            </article>
+
+            <article class="footer-direita">
+                <p class="contato-footer">Contato</p>
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/local-logo.png" class="logos-fundo">
+                    <p class="paragrafos"><span style="font-weight: 900;">Venha nos visitar na rua: </span>Av. Paulista,
+                        999</p>
+                </div>
+
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/telefone-logo.webp" class="logos-fundo">
+                    <p class="paragrafos"><span style="font-weight: 900;">Entre contato pelo número:
+                        </span>(11)99999-9999</p>
+                </div>
+
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/logo-horario.png" class="logos-fundo-2">
+                    <p class="paragrafos"><span style="font-weight: 900;">Segunda a Sábado:
+                        </span>11:00 - 23:00</p>
+                </div>
+
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/logo-horario.png" class="logos-fundo-2">
+                    <p class="paragrafos"><span style="font-weight: 900;">Domingo:
+                        </span>11:00 - 17:00</p>
+                </div>
+            </article>
+        </section>
+        <p style="color: rgb(210, 210, 210); margin-left: 100px;">© 2026 Restaurante - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

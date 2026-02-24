@@ -4976,7 +4976,7 @@ a {
         border-bottom: solid 2px #ffffff;
         padding-left: 50px;
         padding-right: 50px;
-        gap: 300px;
+        gap: 250px;
         position: fixed;
         top: 0;
         left: 0;
@@ -5422,7 +5422,7 @@ a {
 
     .porque-esse-restaurante {
         background-image: url(assets/fundo-home.webp);
-        height: 750px;
+        height: 800px;
         width: 100%;
         padding: 1px;
     }
@@ -5801,6 +5801,7 @@ a {
     .paixao {
         font-size: 33px;
         margin-top: 15px;
+        text-align: center;
     }
 
     .breve-historia {
@@ -5961,7 +5962,7 @@ a {
 
     .porque-esse-restaurante {
         background-image: url(assets/fundo-home.webp);
-        height: 775px;
+        height: 800px;
         width: 100%;
         padding: 1px;
     }

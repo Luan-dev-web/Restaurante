@@ -5882,10 +5882,11 @@ a {
         transition: 0.5s;
         border: none;
         margin-bottom: 100px;
-        font-size: 19px;
-        padding: 12px;
+        font-size: 17px;
+        padding: 10px;
         text-align: center;
         padding-left: 9px;
+        padding-left: 18px;
     }
 
     .botao-reserva-2:hover {

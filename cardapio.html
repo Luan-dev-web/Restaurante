@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardapio.css">
+    <title>Restaurante</title>
+</head>
+
+<body>
+
+    <header>
+        <img alt="logo-restaurante" class="logo-restaurante" src="assets/logo-restaurante.png">
+        <div class="menu-toggle">☰</div>
+        <article class="espaco">
+            <a href="index.html" class="link-menu">Home</a>
+            <a class="link-menu"><u>Menu</u></a>
+            <a href="sobre-nos.html" class="link-menu">Sobre nós</a>
+            <a href="galeria.html" class="link-menu">Galeria</a>
+            <a href="contato.html" class="link-menu">Contato</a>
+            <button class="botao-menu" onclick="window.location.href='reserva.html'">Faça sua reserva</button>
+        </article>
+    </header>
+    <main>
+        <section class="fundo-menu">
+            <h2 class="hdois-cardapio">Menu</h2>
+            <div class="linha"></div>
+            <p class="p-frase">Descubra nossos pratos e sabores exclusivos</p>
+        </section>
+
+        <div class="menu">
+            <h2 class="hdois">Cardápio</h2>
+            <p class="p-cardapio">Descubra nossos pratos e sabores exclusivos!</p>
+        </div>
+
+        <section id="lista-pratos"></section>
+
+        <script>
+            const pratos = [
+                {
+                    url: "assets/hamburger.webp",
+                    nome: "Big-Hamburger",
+                    resumo: "Hambúrguer artesanal com carne suculenta, queijo derretido e ingredientes frescos no pão macio.",
+                    preco: 35.00
+                },
+                {
+                    url: "assets/salmao-2.webp",
+                    nome: "Salmão gourmet",
+                    resumo: "Salmão grelhado no ponto certo, temperado com ervas finas e servido com acompanhamento especial.",
+                    preco: 42.00
+                },
+                {
+                    url: "assets/salada-diversa.webp",
+                    nome: "Salada diversa",
+                    resumo: "Mix de folhas frescas, legumes variados e molho especial da casa.",
+                    preco: 25.00
+                },
+                {
+                    url: "assets/risoto-de-camarao.webp",
+                    nome: "Risoto de camarrão",
+                    resumo: "Risoto cremoso preparado com camarões selecionados e temperos aromáticos.",
+                    preco: 40.00
+                },
+                {
+                    url: "assets/fritas.webp",
+                    nome: "Batatas fritas",
+                    resumo: "Batatas crocantes por fora e macias por dentro, douradas na medida certa.",
+                    preco: 23.00
+                },
+                {
+                    url: "assets/file-mignom.webp",
+                    nome: "Filé mignon",
+                    resumo: "Corte nobre de carne grelhado, macio e suculento, servido com acompanhamento.",
+                    preco: 37.00
+                },
+                {
+                    url: "assets/coxinhas.webp",
+                    nome: "Porção de coxinhas",
+                    resumo: "Coxinhas douradas e crocantes, recheadas com frango temperado.",
+                    preco: 27.00
+                },
+                {
+                    url: "assets/costela.webp",
+                    nome: "Costela de boi",
+                    resumo: "Costela assada lentamente, extremamente macia e cheia de sabor.",
+                    preco: 35.00
+                },
+                {
+                    url: "assets/bacalhau-a-bras.webp",
+                    nome: "Bacalhau á brás",
+                    resumo: "Tradicional bacalhau desfiado com batatas, ovos e temperos portugueses.",
+                    preco: 30.00
+                },
+                {
+                    url: "assets/sopa.webp",
+                    nome: "Sopa de frango",
+                    resumo: "Sopa caseira de frango com legumes frescos e caldo bem temperado.",
+                    preco: 30.00
+                },
+                {
+                    url: "assets/feijoada.webp",
+                    nome: "Feijoada",
+                    resumo: "Prato típico brasileiro com feijão preto e carnes selecionadas.",
+                    preco: 35.00
+                },
+                {
+                    url: "assets/tipico.webp",
+                    nome: "Alaminuta",
+                    resumo: "Prato completo com arroz, feijão, carne, ovo e batatas fritas.",
+                    preco: 30.00
+                }
+            ];
+
+            const container = document.getElementById("lista-pratos");
+
+            pratos.forEach(prato => {
+                container.innerHTML += `
+      <div class="prato">
+        <img class="img-prato" src="${prato.url}" alt="${prato.nome}">
+        <div class="escritas">
+          <h2 class="nome">${prato.nome}</h2>
+          <p class="resumo">${prato.resumo}</p>
+          <div class="preco-reserva">
+            <p class="preco">R$ ${prato.preco.toFixed(2)}</p>
+            <a href="reserva.html" class="reserva-b">Faça sua reserva</a>
+          </div>
+        </div>
+      </div>
+    `;
+            });
+
+        </script>
+
+    </main>
+    <footer>
+        <div class="faca-sua-reserva">
+            <img alt="logo-restaurante" src="assets/logo-restaurante.png" style="width: 200px">
+            <button class="botao-menu" onclick="window.location.href='reserva.html'">Faça sua reserva</button>
+        </div>
+        <section class="two-footer">
+            <article class="menus-footer">
+                <p class="menu-footer">Menu</p>
+                <a href="index.html" class="footer-links">Home</a>
+                <a href="cardapio.html" class="footer-links">Menu</a>
+                <a href="sobre-nos.html" class="footer-links">Sobre nós</a>
+                <a href="galeria.html" class="footer-links">Galeria</a>
+                <a href="contato.html" class="footer-links">Contato</a>
+            </article>
+
+            <article class="footer-direita">
+                <p class="contato-footer">Contato</p>
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/local-logo.png" class="logos-fundo">
+                    <p class="paragrafos"><span style="font-weight: 900;">Venha nos visitar na rua: </span>Av. Paulista,
+                        999</p>
+                </div>
+
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/telefone-logo.webp" class="logos-fundo">
+                    <p class="paragrafos"><span style="font-weight: 900;">Entre contato pelo número:
+                        </span>(11)99999-9999</p>
+                </div>
+
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/logo-horario.png" class="logos-fundo-2">
+                    <p class="paragrafos"><span style="font-weight: 900;">Segunda a Sábado:
+                        </span>11:00 - 23:00</p>
+                </div>
+
+                <div class="local-contato">
+                    <img alt="local-logo" src="assets/logo-horario.png" class="logos-fundo-2">
+                    <p class="paragrafos"><span style="font-weight: 900;">Domingo:
+                        </span>11:00 - 17:00</p>
+                </div>
+            </article>
+        </section>
+        <p class="direitos">© 2026 Restaurante - Todos os direitos reservados</p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

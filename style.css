@@ -4817,10 +4817,9 @@ a {
         border: none;
         padding: 0;
         margin-bottom: 100px;
-        font-size: 17px;
-        padding-top: 10px;
+        font-size: 14px;
+        align-items: center;
         justify-content: center;
-        padding-left: 0;
     }
 
     .botao-reserva-2:hover {
@@ -5357,7 +5356,7 @@ a {
         transition: 0.5s;
         border: none;
         margin-bottom: 100px;
-        font-size: 17px;
+        font-size: 14px;
         padding: 10px;
         text-align: center;
         padding-left: 9px;

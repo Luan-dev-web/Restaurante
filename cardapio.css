@@ -2989,6 +2989,7 @@ a {
 
     .preco {
         color: #F5820E;
+        font-size: 12px;
     }
 
     .hdois {
@@ -3001,6 +3002,7 @@ a {
     }
 
     .reserva-b {
+        display: flex;
         cursor: pointer;
         height: 30px;
         width: 88px;
@@ -3009,10 +3011,10 @@ a {
         background: #F5820E;
         border: none;
         transition: 0.5s;
-        font-size: 12px;
-        padding: 3px;
-        text-align: center;
-        padding-top: 8px;
+        font-size: 11px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .reserva-b:hover {

@@ -24,7 +24,43 @@
     </header>
 
     <main>
-        
+        <section class="fundo-menu">
+            <h2 class="hdois-cardapio">Galeria</h2>
+            <div class="linha"></div>
+            <p class="p-frase">Explore momentos prazerosos e o ambiente acolhedor do nosso restaurante</p>
+        </section>
+
+        <div id="lista-galeria"></div>
+
+        <script>
+            const lista = [
+                { src: "assets/galeria-1.webp" },
+                { src: "assets/galeria-2.webp" },
+                { src: "assets/galeria-3.webp" },
+                { src: "assets/galeria-4.webp" },
+                { src: "assets/galeria-5.webp" },
+                { src: "assets/galeria-6.webp" },
+                { src: "assets/galeria-7.webp" },
+                { src: "assets/galeria-8.webp" },
+                { src: "assets/galeria-9.webp" },
+                { src: "assets/galeria-10.webp" },
+                { src: "assets/galeria-11.webp" },
+                { src: "assets/galeria-12.webp" }
+            ];
+
+            const container = document.getElementById("lista-galeria");
+
+            lista.forEach(prato => {
+                container.innerHTML += `
+      <img class="img-galeria" src="${prato.src}">
+    `;
+            });
+        </script>
+
+        <article class="descubra-2">
+            <h1 class="destaques-2">Pronto para viver essa experiência?</h1>
+            <a class="botao-reserva-2" href="reserva.html">Reserve sua mesa agora</a>
+        </article>|
     </main>
 
 
@@ -73,5 +109,7 @@
         </section>
         <p class="direitos">© 2026 Restaurante - Todos os direitos reservados</p>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

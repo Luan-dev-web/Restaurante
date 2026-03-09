@@ -25,276 +25,10 @@ a {
     display: flex;
 }
 
-@media (max-width: 2720px) {
-
-    header {
-        display: flex;
-        background-color: rgb(22, 22, 22);
-        height: 75px;
-        width: 100%;
-        align-items: center;
-        border-bottom: solid 2px #ffffff;
-        padding-left: 60px;
-        padding-right: 60px;
-        gap: 250px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-
-    main {
-        margin-top: 75px;
-    }
-
-
-    .logo-restaurante {
-        width: 85px;
-        height: 55px;
-    }
-
-    .espaco {
-        display: flex;
-        gap: 70px;
-        align-items: center;
-    }
-
-    .link-menu {
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
-        transition: 0.5s;
-    }
-
-    .link-menu:hover {
-        color: #F5820E;
-    }
-
-    .botao-menu {
-        cursor: pointer;
-        height: 39px;
-        width: 130px;
-        color: white;
-        border-radius: 7px;
-        background: #F5820E;
-        border: solid 1px black;
-        transition: 0.5s;
-    }
-
-    .botao-menu:hover {
-        color: #F5820E;
-        background: white;
-        translate: 0px -2px;
-    }
-
-    /*Acima header*/
-
-    .banner {
-        position: relative;
-    }
-
-    .texto-banner {
-        position: absolute;
-        top: 50%;
-        left: 22%;
-        transform: translate(-50%, -50%);
-    }
-
-    .banner img {
-        width: 100%;
-        height: 660px;
-        display: block;
-    }
-
-    .texto {
-        color: white;
-        font-size: 64px;
-    }
-
-    .texto span {
-        color: #F5820E;
-    }
-
-    .excepcional {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: white;
-    }
-
-    .botao-reserva {
-        cursor: pointer;
-        height: 46px;
-        width: 139px;
-        color: white;
-        border-radius: 7px;
-        background: #F5820E;
-        transition: 0.5s;
-        border: none;
-    }
-
-    .botao-reserva:hover {
-        color: #F5820E;
-        background: white;
-        translate: 0px -2px;
-    }
-
-    .ver-cardapio {
-        width: 139px;
-        border: 2px solid #F5820E;
-        border-radius: 5px;
-        height: 46px;
-        color: white;
-        background-color: #3A2A27;
-        margin-right: 40px;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    .ver-cardapio:hover {
-        color: #F5820E;
-        background: white;
-        translate: 0px -2px;
-    }
-
-    /*main*/
-    main {
-        margin-top: 75px;
-    }
-
-    /*footer abaixo*/
-
-    .fundo-footer {
-        width: 100%;
-        height: 450px;
-        position: relative;
-    }
-
-    footer {
-        background-image: url(assets/fundo-home.webp);
-        width: 100%;
-        height: 300px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .local-contato {
-        display: flex;
-        margin-top: 8px;
-    }
-
-    .paragrafos {
-        padding-top: 6px;
-    }
-
-    .menu-footer {
-        font-size: 26px;
-        color: #F5820E;
-        margin-bottom: 5px;
-    }
-
-    .contato-footer {
-        font-size: 27px;
-        color: #F5820E;
-    }
-
-    .footer-links {
-        color: white;
-        text-decoration: underline;
-        transition: 0.5s;
-    }
-
-    .footer-links:hover {
-        color: #F5820E;
-    }
-
-    .quatro-logos {
-        width: 100%;
-        display: flex;
-        gap: 125px;
-        justify-content: center;
-    }
-
-    .caixa {
-        width: 140px;
-        color: rgb(202, 202, 202);
-        text-align: center;
-    }
-
-    .porque-esse-restaurante {
-        background-image: url(assets/fundo-home.webp);
-        height: 500px;
-        width: 100%;
-        padding: 1px;
-    }
-
-    .h1-porque-escolher {
-        width: 100%;
-        text-align: center;
-        font-size: 45px;
-        color: white;
-    }
-
-    .logos-fundo-2 {
-        width: 30px;
-        margin-left: 8px;
-        margin-right: 7px;
-    }
-
-    .logos-fundo {
+.logos-fundo {
         width: 45px;
         height: 30px;
     }
-
-    .p-porque-escolher {
-        width: 100%;
-        text-align: center;
-        color: white;
-    }
-
-    .faca-sua-reserva {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
-        margin-right: 120px;
-    }
-
-    .menus-footer {
-        color: white;
-        border-right: 2px solid white;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;
-        padding-right: 45px;
-        gap: 8px;
-    }
-
-    .footer-direita {
-        color: white;
-        border-left: 2px solid white;
-        border-radius: 25px;
-    }
-
-    .h2-titulo {
-        font-weight: 300;
-    }
-
-    .explicacao {
-        font-weight: 300;
-        margin-top: 10px;
-    }
-
-    .direitos {
-        color: rgb(210, 210, 210);
-        margin-left: 100px;
-        width: 190px;
-    }
-
-}
-
-
 
 
 
@@ -555,6 +289,278 @@ a {
     }
 
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 2720px) {
+
+    header {
+        display: flex;
+        background-color: rgb(22, 22, 22);
+        height: 75px;
+        width: 100%;
+        align-items: center;
+        border-bottom: solid 2px #ffffff;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    main {
+        margin-top: 75px;
+    }
+
+
+    .logo-restaurante {
+        width: 85px;
+        height: 55px;
+    }
+
+    .espaco {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+    }
+
+    .link-menu {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .link-menu:hover {
+        color: #F5820E;
+    }
+
+    .botao-menu {
+        cursor: pointer;
+        height: 39px;
+        width: 130px;
+        color: white;
+        border-radius: 7px;
+        background: #F5820E;
+        border: solid 1px black;
+        transition: 0.5s;
+    }
+
+    .botao-menu:hover {
+        color: #F5820E;
+        background: white;
+        translate: 0px -2px;
+    }
+
+    /*Acima header*/
+
+    
+    .fundo-menu {
+        background-image: url(assets/fundo-galeria.webp);
+        width: 100%;
+        height: 700px;
+        padding-left: 85px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hdois-cardapio {
+        color: white;
+        font-size: 110px;
+        padding-top: 195px;
+        padding-left: 15px;
+    }
+
+    .linha {
+        background-color: #F5820E;
+        width: 500px;
+        height: 2px;
+    }
+
+    .p-frase {
+        color: white;
+        font-size: 28px;
+        padding-left: 15px;
+    }
+
+    #lista-galeria {
+        display: grid;
+        grid-template-columns: repeat(4, 250PX);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .img-galeria {
+        width: 250px;
+        border-radius: 5px;
+    }
+
+    .descubra-2 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 100px;
+
+    }
+
+    .destaques-2 {
+        font-size: 42px;
+    }
+
+    .botao-reserva-2 {
+        cursor: pointer;
+        display: flex;
+        height: 50px;
+        width: 250px;
+        color: white;
+        border-radius: 7px;
+        background: #F5820E;
+        transition: 0.5s;
+        border: none;
+        margin-bottom: 100px;
+        font-size: 23px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .botao-reserva-2:hover {
+        color: #F5820E;
+        background: white;
+        translate: 0px -2px;
+    }
+
+    footer {
+        background-image: url(assets/fundo-home.webp);
+        width: 100%;
+        height: 300px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-footer {
+        font-size: 26px;
+        color: #F5820E;
+        margin-bottom: 5px;
+    }
+
+    .contato-footer {
+        font-size: 27px;
+        color: #F5820E;
+    }
+
+    .footer-links {
+        color: white;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+
+    .footer-links:hover {
+        color: #F5820E;
+    }
+
+    .quatro-logos {
+        width: 100%;
+        display: flex;
+        gap: 125px;
+        justify-content: center;
+    }
+
+    .caixa {
+        width: 140px;
+        color: rgb(202, 202, 202);
+        text-align: center;
+    }
+
+    .porque-esse-restaurante {
+        background-image: url(assets/fundo-home.webp);
+        height: 500px;
+        width: 100%;
+        padding: 1px;
+    }
+
+    .h1-porque-escolher {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+
+    .logos-fundo-2 {
+        width: 30px;
+        margin-left: 8px;
+        margin-right: 7px;
+    }
+
+    .p-porque-escolher {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .faca-sua-reserva {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin-right: 120px;
+    }
+
+    .menus-footer {
+        color: white;
+        border-right: 2px solid white;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 45px;
+        gap: 8px;
+    }
+
+    .footer-direita {
+        color: white;
+        border-left: 2px solid white;
+        border-radius: 25px;
+    }
+
+    .h2-titulo {
+        font-weight: 300;
+    }
+
+    .explicacao {
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .direitos {
+        color: rgb(210, 210, 210);
+        margin-left: 100px;
+        width: 190px;
+    }
+
+}
+
+
+
+
+
+
 
 
 

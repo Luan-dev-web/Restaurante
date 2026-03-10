@@ -23,7 +23,60 @@
     </header>
 
     <main>
-        
+        <form id="form-reserva">
+
+            <h2 class="titulo-da-reserva">Reserve sua mesa no Seu Restaurante</h2>
+
+            <div class="grid">
+
+                <div class="campo">
+                    <label>Nome</label>
+                    <input placeholder="Nome" type="text" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input placeholder="E-mail" type="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label>Telefone</label>
+                    <input placeholder="Telefone" type="tel" id="telefone" required>
+                </div>
+
+                <div class="campo">
+                    <label>Horário</label>
+                    <select id="horario">
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Data</label>
+                    <input type="date" id="data" required>
+                </div>
+
+                <div class="campo">
+                    <label>Número de Pessoas</label>
+                    <select id="pessoas">
+                        <option>1 Pessoa</option>
+                        <option>2 Pessoas</option>
+                        <option>3 Pessoas</option>
+                        <option>4 Pessoas</option>
+                        <option>5 Pessoas</option>
+                        <option>6/8 Pessoas</option>
+                        <option>9/12 Pessoas</option>
+                        <option>+13 Pessoas</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button type="submit">Confirmar Reserva</button>
+
+        </form>
     </main>
 
 
@@ -59,18 +112,19 @@
                 <div class="local-contato">
                     <img alt="local-logo" src="assets/logo-horario.png" class="logos-fundo-2">
                     <p class="paragrafos"><span style="font-weight: 900;">Segunda a Sábado:
-                        </span>11:00 - 23:00</p>
+                        </span>18:00 - 23:00</p>
                 </div>
 
                 <div class="local-contato">
                     <img alt="local-logo" src="assets/logo-horario.png" class="logos-fundo-2">
                     <p class="paragrafos"><span style="font-weight: 900;">Domingo:
-                        </span>11:00 - 17:00</p>
+                        </span>18:00 - 22:00</p>
                 </div>
             </article>
         </section>
         <p class="direitos">© 2026 Restaurante - Todos os direitos reservados</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="reserva.js"></script>
 </body>
+
 </html>

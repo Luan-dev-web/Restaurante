@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: beige;
+    background-color: white;
 }
 
 a {
@@ -174,14 +174,29 @@ a {
         height: 30px;
     }
 
+    /*abaixo conteudo da pagina*/
 
+    .titulo-contato {
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(4, 200px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
-
-
+    .logo-contato {
+        width: 200px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -378,14 +393,27 @@ a {
     }
 
 
+    .titulo-contato {
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(4, 200px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
-
-
-
+    .logo-contato {
+        width: 200px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -575,12 +603,27 @@ a {
     }
 
 
+    .titulo-contato {
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(4, 200px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
-
+    .logo-contato {
+        width: 200px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -765,11 +808,27 @@ a {
     }
 
 
+    .titulo-contato {
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(4, 200px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
+    .logo-contato {
+        width: 200px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -953,11 +1012,27 @@ a {
         translate: 0px -2px;
     }
 
+    .titulo-contato {
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(2, 200px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
+    .logo-contato {
+        width: 200px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -1147,17 +1222,6 @@ a {
         translate: 0px -2px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     footer {
         background-image: url(assets/fundo-home.webp);
         width: 100%;
@@ -1345,15 +1409,6 @@ a {
         background: white;
         translate: 0px -2px;
     }
-
-
-
-
-
-
-
-
-
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -1577,13 +1632,6 @@ a {
         translate: 0px -2px;
     }
 
-
-
-
-
-
-
-
     footer {
         background-image: url(assets/fundo-home.webp);
         width: 100%;
@@ -1805,13 +1853,27 @@ a {
         translate: 0px -2px;
     }
 
+    .titulo-contato {
+        font-size: 65px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(2, 140px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
-
-
+    .logo-contato {
+        width: 140px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);
@@ -2041,10 +2103,27 @@ a {
         translate: 0px -2px;
     }
 
+    .titulo-contato {
+        font-size: 60px;
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
 
+    .contato {
+        width: 100%;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(2, 120px);
+        margin-top: 100px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
+    .logo-contato {
+        width: 120px;
+    }
 
     footer {
         background-image: url(assets/fundo-home.webp);

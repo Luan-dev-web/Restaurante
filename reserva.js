@@ -18,7 +18,7 @@ document.getElementById("form-reserva").addEventListener("submit", function (eve
     Horário: ${horario}
     Pessoas: ${pessoas}`
 
-    let numero = "5551998281627"
+    let numero = "999999999999"
 
     let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
 
